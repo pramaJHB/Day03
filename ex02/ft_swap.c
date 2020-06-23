@@ -6,10 +6,14 @@
 /*   By: prama <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 09:45:19 by prama             #+#    #+#             */
-/*   Updated: 2020/06/22 10:03:20 by prama            ###   ########.fr       */
+/*   Updated: 2020/06/23 12:22:45 by prama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*
+#include <stdio.h>
+#include <unistd.h>
+*/
 void	ft_swap(int *a, int *b)
 {
 	int	c;
@@ -18,3 +22,19 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b =  c;
 }
+/*
+int	main(void)
+{
+	int a;
+	int b;
+
+	a = 31;
+	b = 5;
+
+	ft_swap(&a,&b);
+
+	printf("%d\n", a);
+	printf("%d\n", b);
+
+	return(0);
+}*/
