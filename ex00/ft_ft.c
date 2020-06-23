@@ -6,12 +6,29 @@
 /*   By: prama <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/22 08:40:07 by prama             #+#    #+#             */
-/*   Updated: 2020/06/22 09:58:54 by prama            ###   ########.fr       */
+/*   Updated: 2020/06/23 11:49:34 by prama            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
+#include <stdio.h>
 
 void	ft_ft(int *nbr)
 {
 	*nbr = 42;
 }
+
+int		main(void)
+{
+	int a;
+	int *ptr;
+
+	a = 17;
+	ptr = &a;
+
+	ft_ft(ptr);
+
+	printf("%d\n", a);
+	return (0);
+}
+
